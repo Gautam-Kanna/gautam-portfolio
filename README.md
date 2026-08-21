@@ -58,3 +58,4 @@ The site defaults to dark and includes a light/dark toggle in the nav
 - **Text content**: everything (summary, experience bullets, project
   descriptions, skills) lives directly in `index.html` - no CMS or data
   file, just edit the HTML.
+"# gautam-portfolio" 
