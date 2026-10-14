@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Gautam Kannapiran — Quantitative Trader</title>
-<meta name="description" content="Quantitative trader building systematic trading strategies with rigorous backtesting. Statistical arbitrage in crypto with 9.8% annual returns and 0.745 Sharpe ratio." />
+<meta name="description" content="Quantitative trader building systematic trading strategies with rigorous backtesting. Cross-sectional crypto momentum with 4.7% out-of-sample annual return and 0.41 Sharpe ratio after 20 bps trading costs (2024–2025)." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2315131a%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22%23cf8863%22 font-family=%22Georgia,serif%22>G</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,9 +53,9 @@
       <p class="hero__role">Quantitative&nbsp;Trader</p>
       <p class="hero__summary">
         Quantitative trader pursuing systematic trading through rigorous research and disciplined backtesting.
-        Recently completed the Wall Street Quants bootcamp. Specializing in statistical arbitrage with
-        cross-sectional analysis, mean reversion, and momentum strategies. Python-driven data pipelines,
-        realistic trading costs, out-of-sample validation. Currently building alpha in cryptocurrency markets.
+        Recently completed the Wall Street Quants bootcamp. Specializing in cross-sectional momentum research
+        in cryptocurrency markets. I also tested mean reversion, but it did not survive trading costs and was
+        set aside. Python-driven data pipelines, realistic trading costs, out-of-sample validation.
       </p>
       <div class="hero__actions">
         <a class="btn btn--accent" href="#projects">View projects</a>
@@ -80,31 +80,31 @@
     <div class="stats__grid" data-reveal>
       <div class="stat stat--highlight">
         <div class="stat__badge">Return</div>
-        <p class="stat__num"><span class="counter" data-target="9.8" data-decimals="1">9.8</span><span>%</span></p>
+        <p class="stat__num"><span class="counter" data-target="4.7" data-decimals="1">4.7</span><span>%</span></p>
         <p class="stat__label">Annual return</p>
-        <p class="stat__meta">vs BTC +48.5% with 1.007 Sharpe</p>
+        <p class="stat__meta">vs BTC +33.3% with 0.84 Sharpe</p>
       </div>
       <div class="stat stat--highlight">
         <div class="stat__badge">Risk</div>
-        <p class="stat__num"><span class="counter" data-target="0.745" data-decimals="3">0.745</span></p>
+        <p class="stat__num"><span class="counter" data-target="0.41" data-decimals="2">0.41</span></p>
         <p class="stat__label">Sharpe ratio</p>
         <p class="stat__meta">Risk-adjusted excess return</p>
       </div>
       <div class="stat">
         <div class="stat__badge">Drawdown</div>
-        <p class="stat__num"><span class="counter" data-target="-12.3" data-decimals="1">-12.3</span><span>%</span></p>
+        <p class="stat__num"><span class="counter" data-target="-13.1" data-decimals="1">-13.1</span><span>%</span></p>
         <p class="stat__label">Maximum drawdown</p>
         <p class="stat__meta">Peak-to-trough decline</p>
       </div>
       <div class="stat">
         <div class="stat__badge">Beta</div>
-        <p class="stat__num"><span class="counter" data-target="-0.015" data-decimals="3">-0.015</span></p>
+        <p class="stat__num"><span class="counter" data-target="-0.024" data-decimals="3">-0.024</span></p>
         <p class="stat__label">Beta to BTC</p>
         <p class="stat__meta">Market-neutral positioning</p>
       </div>
     </div>
     <div class="stats__insight" data-reveal>
-      <p><strong>Key insight:</strong> Strategy generates uncorrelated alpha with low drawdown, demonstrating disciplined signal research and rigorous out-of-sample validation.</p>
+      <p><strong>Key insight:</strong> Market-neutral in practice (correlation with BTC −0.08). The alpha is not yet statistically significant (t = 0.82), so this is a promising result that needs a longer track record and a wider universe to confirm.</p>
     </div>
   </section>
 
@@ -125,7 +125,7 @@
           <ul>
             <li>Completed Wall Street Quants bootcamp with capstone project in statistical arbitrage.</li>
             <li>Developing systematic trading strategies in cryptocurrency markets with rigorous out-of-sample validation and realistic trading cost modeling.</li>
-            <li>Research focus: cross-sectional momentum and mean reversion alpha generation, regime detection, machine learning signal enhancement, portfolio optimization.</li>
+            <li>Research focus: cross-sectional momentum, trading-cost-aware portfolio construction, and out-of-sample validation.</li>
           </ul>
         </div>
       </li>
@@ -164,7 +164,7 @@
 
   <section class="section" id="projects">
     <div class="section__head" data-reveal>
-      <p class="eyebrow">02 — Live strategies</p>
+      <p class="eyebrow">02 — Strategy research</p>
       <h2>Quant Projects</h2>
     </div>
 
@@ -172,11 +172,11 @@
       <article class="project-card project-card--featured" data-reveal>
         <div class="project-card__top">
           <h3>Crypto Momentum &amp; Reversal<br />Statistical Arbitrage</h3>
-          <span class="project-card__tag mono">Live Strategy</span>
+          <span class="project-card__tag mono">Backtest</span>
         </div>
         
         <p class="project-card__intro">
-          Cross-sectional long/short market-neutral strategy on 10 large-cap cryptocurrencies, trading 4-hour bars with dual-timeframe signals and rigorous risk controls.
+          Dollar-neutral long/short strategy on 10 large-cap cryptocurrencies, rebalanced every 4-hour bar, with 20 bps trading costs included in all results.
         </p>
 
         <div class="project-breakdown">
@@ -186,15 +186,15 @@
           </div>
           <div class="breakdown-item">
             <span class="breakdown-label">Signals</span>
-            <span class="breakdown-value">Mean reversion (4h) + Momentum (8h–30d)</span>
+            <span class="breakdown-value">Multi-horizon momentum: average of 3, 7, 14 and 30-day cross-sectional ranks</span>
           </div>
           <div class="breakdown-item">
             <span class="breakdown-label">Position Type</span>
-            <span class="breakdown-value">Long/short market-neutral (beta-adjusted)</span>
+            <span class="breakdown-value">Dollar-neutral long/short</span>
           </div>
           <div class="breakdown-item">
             <span class="breakdown-label">Enhancements</span>
-            <span class="breakdown-value">Volume filtering, regime detection, seasonality, exponential smoothing</span>
+            <span class="breakdown-value">Exponential smoothing to cut turnover (8-day half-life), 20 bps cost assumption</span>
           </div>
         </div>
 
@@ -202,20 +202,20 @@
           <h4>Out-of-Sample Performance (2024–2025)</h4>
           <div class="results-grid">
             <div class="result">
-              <span class="result-value">9.8%</span>
+              <span class="result-value">4.7%</span>
               <span class="result-label">Annual Return</span>
             </div>
             <div class="result">
-              <span class="result-value">0.745</span>
+              <span class="result-value">0.41</span>
               <span class="result-label">Sharpe Ratio</span>
             </div>
             <div class="result">
-              <span class="result-value">-12.3%</span>
+              <span class="result-value">-13.1%</span>
               <span class="result-label">Max Drawdown</span>
             </div>
             <div class="result">
-              <span class="result-value">10.5%</span>
-              <span class="result-label">Alpha</span>
+              <span class="result-value">5.5%</span>
+              <span class="result-label">Alpha (t = 0.82, not significant)</span>
             </div>
           </div>
         </div>
@@ -281,8 +281,8 @@
         <p class="split__meta mono">Oct 2026 (Completed)</p>
         <p class="split__body">
           Intensive quant trading bootcamp focused on systematic trading, strategy research,
-          and signal development. Completed final capstone project: crypto momentum/reversal
-          statistical arbitrage strategy with rigorous out-of-sample validation. Now pursuing
+          and signal development. Completed final capstone project: a momentum statistical arbitrage
+          strategy (reversal research included) with out-of-sample validation. Now pursuing
           full-time quantitative trading.
         </p>
       </div>
