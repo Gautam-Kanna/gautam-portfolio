@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gautam Kanna Kannapiran | AI/ML Engineer</title>
+  <meta name="description" content="AI/ML Engineer with 5+ years of experience in machine learning, generative AI, and agentic AI systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a class="nav__mark" href="#top">GK</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--ghost" href="#contact">Hire me</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__text">
+        <p class="eyebrow reveal">Brampton, ON · Canadian Citizen</p>
+        <h1 class="hero__name reveal">Gautam Kanna<br /><span class="grad">Kannapiran</span></h1>
+        <p class="hero__role reveal">
+          <span id="typed"></span><span class="caret">|</span>
+        </p>
+        <p class="hero__summary reveal">
+          AI/ML Engineer with 5+ years of experience delivering production-grade machine learning,
+          generative AI, and agentic AI solutions across fintech and healthcare.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--accent" href="#projects">View projects</a>
+          <a class="btn btn--ghost" href="assets/Gautam_Kanna_Kannapiran_AIML.pdf" download>Download résumé</a>
+        </div>
+      </div>
+      <div class="hero__orb" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section__head reveal">
+        <p class="eyebrow">01 · Experience</p>
+        <h2>Where I've <span class="grad">worked</span></h2>
+      </div>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <span class="timeline__dot"></span>
+          <div class="card">
+            <p class="mono">Jan 2024 — Present</p>
+            <h3>AI/ML Engineer</h3>
+            <p class="org">Stripe · Canada</p>
+            <ul>
+              <li>Built an agentic GenAI fraud investigation platform that automates alert triage and explainable case summaries, cutting investigation time by 40%.</li>
+              <li>Trained an XGBoost risk-scoring model with real-time SHAP explanations, reducing false positives on high-risk alerts.</li>
+              <li>Implemented LLM guardrails covering intent classification, PII redaction, and prompt-injection defense, reducing fraud escalations by 35%.</li>
+              <li>Built a schema-aware text-to-SQL engine with tenant-isolated, RBAC-enforced execution for fraud analysts.</li>
+              <li>Designed a hybrid RAG pipeline (BM25, dense retrieval, cross-encoder reranking) on pgvector, improving retrieval precision by 28% and cutting token costs by 32%.</li>
+              <li>Automated Apache Airflow ETL pipelines ingesting 2M+ daily transactions and regulatory documents from Google Cloud Storage.</li>
+              <li>Deployed containerized Python microservices on GCE with Artifact Registry and GitHub Actions CI/CD.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__dot"></span>
+          <div class="card">
+            <p class="mono">Jun 2021 — Dec 2023</p>
+            <h3>ML Engineer</h3>
+            <p class="org">McKesson Corporation · Canada</p>
+            <ul>
+              <li>Built temporal risk-classification models in PyTorch and Scikit-learn, reaching 84% precision through threshold calibration and SHAP explainability.</li>
+              <li>Applied BERT and spaCy clinical NLP to extract diagnoses, medications, and authorization requirements from clinical documents.</li>
+              <li>Engineered a FAISS semantic retrieval pipeline over 100K+ clinical and policy passages with sub-500ms latency.</li>
+              <li>Delivered a human-reviewed clinical summarization workflow using GPT-3 and LangChain with source traceability.</li>
+              <li>Operationalized inference on AWS SageMaker with MLflow, CloudWatch monitoring, and drift alerts.</li>
+              <li>Built Power BI dashboards to track model performance and patient-support outcomes.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <p class="eyebrow">02 · Projects</p>
+        <h2>Things I've <span class="grad">built</span></h2>
+      </div>
+      <div class="projects__grid">
+        <a class="project tilt reveal" href="https://github.com/Gautam-Kanna/Chess" target="_blank" rel="noopener">
+          <p class="mono">Java · Swing</p>
+          <h3>Chess</h3>
+          <p>A two-player chess game with all standard rules: castling, en passant, promotion, check, checkmate, and stalemate. Built with a modular Piece, Board, and ChessGame design.</p>
+          <span class="project__link">View on GitHub ↗</span>
+        </a>
+        <a class="project tilt reveal" href="https://github.com/Gautam-Kanna/expense-tracker" target="_blank" rel="noopener">
+          <p class="mono">Java · CSV</p>
+          <h3>Expense Tracker</h3>
+          <p>A command-line expense tracker with input validation, category breakdowns, running totals, and automatic saving to CSV so data persists between runs.</p>
+          <span class="project__link">View on GitHub ↗</span>
+        </a>
+        <a class="project tilt reveal" href="https://github.com/Gautam-Kanna/gautam-portfolio" target="_blank" rel="noopener">
+          <p class="mono">HTML · CSS · JS</p>
+          <h3>Portfolio Site</h3>
+          <p>This site. A dependency-free single-page portfolio with a light/dark theme, scroll animations, and a custom design system.</p>
+          <span class="project__link">View on GitHub ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <p class="eyebrow">03 · Skills</p>
+        <h2>Tools of the <span class="grad">trade</span></h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skills__group reveal">
+          <h3>Languages</h3>
+          <ul class="pills"><li>Python</li><li>SQL</li><li>TypeScript</li><li>JavaScript</li><li>Java</li></ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3>ML &amp; Deep Learning</h3>
+          <ul class="pills"><li>PyTorch</li><li>Scikit-learn</li><li>XGBoost</li><li>Anomaly Detection</li><li>Risk Scoring</li><li>SHAP</li><li>Model Calibration</li></ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3>Generative AI &amp; NLP</h3>
+          <ul class="pills"><li>LLMs</li><li>RAG</li><li>Agentic AI</li><li>LangChain</li><li>BERT</li><li>spaCy</li><li>Prompt-Injection Defense</li><li>LLM-as-a-Judge</li></ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3>Search &amp; Data</h3>
+          <ul class="pills"><li>FAISS</li><li>pgvector</li><li>BM25</li><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Apache Airflow</li></ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3>MLOps &amp; Cloud</h3>
+          <ul class="pills"><li>MLflow</li><li>Docker</li><li>CI/CD</li><li>AWS SageMaker</li><li>GCP</li><li>FastAPI</li><li>Model Monitoring</li></ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3>Analytics</h3>
+          <ul class="pills"><li>Power BI</li><li>Tableau</li><li>DAX</li><li>Power Query</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split" id="education">
+      <div class="card reveal">
+        <p class="eyebrow">Education</p>
+        <h3>Bachelor of Science, Computer Science</h3>
+        <p class="org">York University · Toronto, Ontario</p>
+      </div>
+      <div class="card reveal">
+        <p class="eyebrow">Certifications</p>
+        <h3>Quant Bootcamp</h3>
+        <p class="org">Wall Street Quants</p>
+        <h3 class="cert-title">Eightcap Challenges: Challenge Passed</h3>
+        <p class="org">$10,000 · Phase 1 · Certified 13 Oct 2026</p>
+        <a href="assets/eightcap-certificate.png" target="_blank" rel="noopener" class="cert-link">
+          <img src="assets/eightcap-certificate.png" alt="Eightcap Challenges Certificate of Recognition for Gautam Kanna K." loading="lazy" />
+        </a>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <p class="eyebrow reveal">Get in touch</p>
+      <h2 class="reveal">Let's build something <span class="grad">intelligent.</span></h2>
+      <div class="cta__grid">
+        <a class="cta__item reveal" href="mailto:gautamkanna2@gmail.com">
+          <span class="mono">Email</span>
+          <span>gautamkanna2@gmail.com</span>
+        </a>
+        <a class="cta__item reveal" href="tel:+16478644259">
+          <span class="mono">Phone</span>
+          <span>647 864 4259</span>
+        </a>
+        <a class="cta__item reveal" href="https://github.com/Gautam-Kanna" target="_blank" rel="noopener">
+          <span class="mono">GitHub</span>
+          <span>/Gautam-Kanna ↗</span>
+        </a>
+        <div class="cta__item reveal">
+          <span class="mono">Location</span>
+          <span>Brampton, ON</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Gautam Kanna Kannapiran</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
